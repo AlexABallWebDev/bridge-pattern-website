@@ -1,0 +1,12 @@
+.header {
+  background-color: #E74C3C;
+}
+
+.header > a {
+  color: black;
+}
+
+.tutorial {
+  padding: 40px 15px;
+  text-align: center;
+}
