@@ -1,12 +1,33 @@
+body {
+  margin-top: 6em;
+  margin-bottom: 6em;
+  font-size: 1.7em;
+}
+
 .header {
   background-color: #E74C3C;
 }
 
-.header > a {
-  color: black;
+.alexb-website-link {
+  padding-top: 2em;
+}
+
+.alexb-website-link > a {
+  color: #E74C3C;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.alexb-website-link > a:hover {
+  color: #FF6C5C;
+  font-weight: bold;
 }
 
 .tutorial {
-  padding: 40px 15px;
   text-align: center;
+}
+
+.bridge-uml {
+  width: 100%;
+  max-width: 45em;
 }
