@@ -1,7 +1,8 @@
 body {
   margin-top: 6em;
   margin-bottom: 6em;
-  font-size: 1.7em;
+  font-size: 2em;
+  font-family: "Times New Roman";
 }
 
 .header {
@@ -25,6 +26,16 @@ body {
 
 .tutorial {
   text-align: center;
+}
+
+.tutorial > h2 {
+  font-family: Helvetica;
+  font-size: 2.5em;
+}
+
+.tutorial > h3 {
+  font-family: Helvetica;
+  font-size: 1.5em;
 }
 
 .bridge-uml {
