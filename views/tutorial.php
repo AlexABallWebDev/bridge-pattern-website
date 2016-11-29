@@ -66,7 +66,7 @@
       </p>
       <img class="bridge-uml"
             src="images/Bridge_UML_class_diagram.svg"
-            alt="UML Diagram of the Bridge Pattern and its participants."/>
+            alt="UML Diagram of the Bridge Pattern and its participants." />
 
       <p>
         The participants in this pattern are:
@@ -120,16 +120,39 @@
       </p>
 
       <p>
-        Another benefit is that it reduces the number of classes needed in a
-        hierarchy. For example, in a program that
+        Another benefit is that it can reduce the number of classes needed in
+        certain cases. An example of this is shown in the next section.
       </p>
 
       <h3>Where should a Bridge be used?</h3>
 
       <p>
-        The Bridge Pattern should be used in cases where a piece of functionality
-        will
+        The Bridge Pattern should be used in cases where a class hierarchy
+        branches out due to different permutations of functionality. For
+        example, let's say there is a set of vehicles. A car needs to have
+        an engine to move. An airplane also needs an engine to move.
       </p>
+
+      <p>
+        Now let's say there are different engines that require different fuels
+        (gasoline, diesel, etc.) to operate. A class hierarchy for this scenario
+        would look something like the below UML diagram.
+      </p>
+      <img class="bridge-uml"
+            src="images/vehicles_with_different_fuel_types.PNG"
+            alt="UML Diagram of a Vehicle class and several Child classes,
+            such as GasCar and DieselAirplane." />
+
+      <p>
+        This hierarchy is exploding quickly, and only gets worse as additional
+        vehicles or engines are added. The bridge pattern can simplify such
+        class hierarchies by separating the vehicle (abstraction) from the
+        engine (implementor):
+      </p>
+      <img class="bridge-uml"
+            src="images/bridged_vehicles_with_engines.PNG"
+            alt="UML Diagram of the Vehicle class and a new Engine class. There
+            are far fewer classes in this diagram." />
 
       <h3>Bridge Pattern Example</h3>
 

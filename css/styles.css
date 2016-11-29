@@ -5,6 +5,10 @@ body {
   font-family: "Times New Roman";
 }
 
+img {
+  margin-bottom: 1em;
+}
+
 .header {
   background-color: #E74C3C;
 }
@@ -36,9 +40,15 @@ body {
 .tutorial > h3 {
   font-family: Helvetica;
   font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .bridge-uml {
   width: 100%;
   max-width: 45em;
+}
+
+.tutorial > .list-group {
+  padding-bottom: 1em;
 }
