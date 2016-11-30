@@ -13,12 +13,16 @@ img {
   background-color: #E74C3C;
 }
 
+.header h1 {
+  font-family: Helvetica;
+  color: white;
+}
+
 .alexb-website-link {
   padding-top: 2em;
 }
 
 .alexb-website-link > a {
-  color: #E74C3C;
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -42,6 +46,13 @@ img {
   font-size: 1.5em;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+blockquote.quote {
+  width: 100%;
+  max-width: 45em;
+  margin: auto;
+  padding: 1em 0;
 }
 
 .bridge-uml {
