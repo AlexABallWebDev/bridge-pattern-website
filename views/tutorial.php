@@ -162,7 +162,8 @@
 
       <p>
         One real-world example of the Bridge pattern is the
-        <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/">
+        <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/"
+              target="_blank">
           Java Database
           Connectivity (JDBC) API
         </a>
@@ -179,9 +180,9 @@
         If you are using the Adapter pattern, then you may be trying to fix
         a problem that could have been solved via the Bridge pattern. The
         Adapter pattern makes an uncompatible class work with other classes
-        expecting a certain implementation. The Bridge Pattern already
-        allows the implementation to vary, so no incompatibility occurs in
-        the first place.
+        expecting a certain abstraction. The Bridge Pattern already
+        allows the abstraction and implementation to vary, so no incompatibility
+        occurs in the first place.
       </p>
 
       <p>
@@ -193,9 +194,35 @@
         objects.
       </p>
 
+      <!-- APA citations for my research -->
+      <h3>Sources</h3>
+      <div class="research-sources">
+        <p>
+          <i>Bridge</i>. (n.d.).
+          Retrieved November 30, 2016, from
+          <a href="https://sourcemaking.com/design_patterns/bridge" target="_blank">
+            https://sourcemaking.com/design_patterns/bridge
+          </a>
+        </p>
+        <p>
+          Banas, Derek (2012, October 1). <i>Bridge Design Pattern</i>.
+          [Video File] Retrieved November 30, 2016, from
+          <a href="https://www.youtube.com/watch?v=9jIgSsIfh_8" target="_blank">
+            https://www.youtube.com/watch?v=9jIgSsIfh_8
+          </a>
+        </p>
+        <p>
+          Gamma, E., Helm, R., Johnson, R., &amp; Vislissides, J. (1995).
+          <i>Design patterns: Elements of reusable object-oriented software</i>.
+          Reading, MA: Addison-Wesley.
+        </p>
+      </div>
+
       <!-- Link to my website -->
       <div class="alexb-website-link">
-        <a href="http://alexb.greenrivertech.net/">Visit Alex Ball's Website</a>
+        <a href="http://alexb.greenrivertech.net/">
+          Visit Alex Ball's Website
+        </a>
       </div>
     </div>
 
