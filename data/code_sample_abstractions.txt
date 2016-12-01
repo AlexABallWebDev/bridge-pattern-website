@@ -1,0 +1,35 @@
+public abstract class Vehicle {
+  protected Engine engine;
+
+  public Vehicle(Engine engine) {
+    this.engine = engine;
+  }
+
+  public void move() {
+    engine.move();
+  }
+}
+
+public class Car extends Vehicle {
+  public Car(Engine engine) {
+    super(engine);
+  }
+
+  public void move() {
+    System.out.println("The car revs its engine.");
+    engine.move();
+    System.out.println("The car moves forward!");
+  }
+}
+
+public class Airplane extends Vehicle {
+  public Airplane(Engine engine) {
+    super(engine);
+  }
+
+  public void move() {
+    System.out.println("The airplane prepares for takeoff.");
+    engine.move();
+    System.out.println("The airplane flies away!");
+  }
+}

@@ -157,11 +157,31 @@
       <h3>Bridge Pattern Example</h3>
 
       <p>
-        Code example? probably?
+        Below is some sample abstractions in the form of vehicles, based on the
+        above UML diagrams:
       </p>
 
+      <pre class="code-sample"><include href="{{ @code_sample_abstractions }}" /></pre>
+
       <p>
-        One real-world example of the Bridge pattern is the
+        And some sample implementors in the form of engines:
+      </p>
+
+      <pre class="code-sample"><include href="{{ @code_sample_implementors }}" /></pre>
+
+      <p>
+        Finally, a main method showing how it would work in practice. A car
+        with a gas engine would rev its engine, "VROOOOM", then move forward.
+        A car with an electric engine would rev and then move forward with no
+        sound. Of course, an airplane works similarly, allowing any engine
+        to be used to fly as long as it has a move() method.
+      </p>
+
+      <pre class="code-sample"><include href="{{ @code_sample_main }}" /></pre>
+
+      <p>
+        If you want to see a real-world example of the Bridge pattern, then look
+        at the
         <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/"
               target="_blank">
           Java Database
@@ -175,6 +195,16 @@
       </p>
 
       <h3>Notes for other Patterns</h3>
+
+      <p>
+        The strategy pattern is very similar to the bridge pattern. Both aim to
+        decouple an abstraction (context) from its implementors (strategies). The
+        difference is in the reasons for decoupling. Bridge is a structural
+        pattern, whereas strategy is a behavioral pattern. Bridge is intended
+        to reduce the size of class hierarchies and enable extensions of both
+        the abstraction and implementor. Strategy is intended to enable runtime
+        choice of algorithm and reuse of a context with different algorithms.
+      </p>
 
       <p>
         If you are using the Adapter pattern, then you may be trying to fix

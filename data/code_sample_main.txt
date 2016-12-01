@@ -1,0 +1,18 @@
+public class BridgeDriver {
+  public static void main(String[] args) {
+    Car gasCar = new Car(new GasEngine());
+
+    // car will rev, "VROOOM!", then move forwards.
+    gasCar.move();
+
+    Car electricCar = new Car(new ElectricEngine());
+
+    // car will rev, "...", then move forwards.
+    electricCar.move();
+
+    Airplane gasPlane = new Airplane(new GasEngine());
+
+    // plane will prep for takeoff, "VROOOM!", then fly.
+    gasPlane.move();
+  }
+}

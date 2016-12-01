@@ -36,6 +36,10 @@ img {
   text-align: center;
 }
 
+.tutorial a {
+  word-wrap: break-word;
+}
+
 .tutorial > h2 {
   font-family: Helvetica;
   font-size: 2.5em;
@@ -62,4 +66,10 @@ blockquote.quote {
 
 .tutorial > .list-group {
   padding-bottom: 1em;
+}
+
+.code-sample {
+  text-align: left;
+  font-size: 0.8em;
+  margin: 1em 0;
 }

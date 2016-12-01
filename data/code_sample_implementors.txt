@@ -1,0 +1,15 @@
+public abstract class Engine {
+  public abstract void move();
+}
+
+public class GasEngine extends Engine {
+  public void move() {
+    System.out.println("VROOOOOOOOOOM!");
+  }
+}
+
+public class ElectricEngine extends Engine {
+  public void move() {
+    System.out.println("...");
+  }
+}
