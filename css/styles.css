@@ -1,5 +1,4 @@
 body {
-  margin-top: 6em;
   margin-bottom: 6em;
   font-size: 2em;
   font-family: "Times New Roman";
@@ -11,11 +10,15 @@ img {
 
 .header {
   background-color: #E74C3C;
+  width: 100%;
 }
 
 .header h1 {
+  margin-top: 1em;
   font-family: Helvetica;
+  font-size: 2.5em;
   color: white;
+  text-align: center;
 }
 
 .alexb-website-link {
@@ -40,16 +43,15 @@ img {
   word-wrap: break-word;
 }
 
-.tutorial > h2 {
-  font-family: Helvetica;
-  font-size: 2.5em;
-}
-
-.tutorial > h3 {
+.tutorial h2 {
   font-family: Helvetica;
   font-size: 1.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.7em;
+}
+
+.tutorial h3 {
+  font-family: Helvetica;
+  font-size: 1em;
 }
 
 blockquote.quote {
@@ -59,9 +61,17 @@ blockquote.quote {
   padding: 1em 0;
 }
 
+.image-container {
+  padding: 1em 0;
+}
+
 .bridge-uml {
   width: 100%;
   max-width: 45em;
+}
+
+.tutorial .image-container+h2 {
+  padding-top: 0;
 }
 
 .tutorial > .list-group {

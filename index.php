@@ -19,8 +19,10 @@ $f3->route('GET /', function($f3) {
 
 //custom error handler
 $f3->set('ONERROR', function($f3) {
-  //redirect user to main page.
-  $f3->reroute('http://www.alexb.greenrivertech.net/projects/bridge-pattern-website');
+  //redirect user to main page if a 404 error is encountered.
+  if ($f3->get('ERROR.code') == '404') {
+    $f3->reroute('http://www.alexb.greenrivertech.net/projects/bridge-pattern-website');
+  }
 });
 
 //start router

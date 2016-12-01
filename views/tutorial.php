@@ -30,19 +30,13 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="navbar navbar-inverse navbar-fixed-top header">
-      <div class="container">
-        <div class="navbar-header">
-          <h1>{{ @title }}</h1>
-        </div>
-      </div>
+    <div class="container header">
+      <h1>{{ @title }}</h1>
     </div>
 
     <!-- Tutorial Content -->
     <div class="container tutorial">
-      <h2>Bridge Pattern Tutorial</h2>
-
-      <h3>Bridge Description</h3>
+      <h2>Bridge Description</h2>
 
       <p>
         This page describes the Bridge Pattern, a Design Pattern in the
@@ -64,23 +58,25 @@
       <p>
         This pattern is visually described by the UML diagram below.
       </p>
-      <img class="bridge-uml"
-            src="images/Bridge_UML_class_diagram.svg"
-            alt="UML Diagram of the Bridge Pattern and its participants." />
+      <div class="image-container">
+        <img class="bridge-uml"
+              src="images/Bridge_UML_class_diagram.svg"
+              alt="UML Diagram of the Bridge Pattern and its participants." />
+      </div>
 
       <p>
         The participants in this pattern are:
       </p>
         <div class="list-group">
           <div class="list-group-item">
-            <h4 class="list-group-item-heading">Abstraction</h4>
+            <h3 class="list-group-item-heading">Abstraction</h3>
             <p class="list-group-item-text">
               An abstract class representing the more abstract part of an
               intended piece of functionality.
             </p>
           </div>
           <div class="list-group-item">
-            <h4 class="list-group-item-heading">RefinedAbstraction</h4>
+            <h3 class="list-group-item-heading">RefinedAbstraction</h3>
             <p class="list-group-item-text">
               A more refined abstraction, an extension of the Abstraction
               class. This pattern is intended to allow for many different
@@ -88,14 +84,14 @@
             </p>
           </div>
           <div class="list-group-item">
-            <h4 class="list-group-item-heading">Implementor</h4>
+            <h3 class="list-group-item-heading">Implementor</h3>
             <p class="list-group-item-text">
               An interface or abstract class representing the implementation
               of the intended piece of functionality.
             </p>
           </div>
           <div class="list-group-item">
-            <h4 class="list-group-item-heading">ConcreteImplementor</h4>
+            <h3 class="list-group-item-heading">ConcreteImplementor</h3>
             <p class="list-group-item-text">
               A concrete implementation of the intended piece of functionality.
               A child/implementor of the Implementor interface/abstract class.
@@ -111,7 +107,7 @@
         methods as needed to accomplish a task.
       </p>
 
-      <h3>Benefits of using a Bridge</h3>
+      <h2>Benefits of using a Bridge</h2>
 
       <p>
         The major benefit is that the abstraction is separated from the
@@ -124,7 +120,7 @@
         certain cases. An example of this is shown in the next section.
       </p>
 
-      <h3>Where should a Bridge be used?</h3>
+      <h2>Where should a Bridge be used?</h2>
 
       <p>
         The Bridge Pattern should be used in cases where a class hierarchy
@@ -138,10 +134,11 @@
         (gasoline, diesel, etc.) to operate. A class hierarchy for this scenario
         would look something like the below UML diagram.
       </p>
-      <img class="bridge-uml"
-            src="images/vehicles_with_different_fuel_types.PNG"
-            alt="UML Diagram of a Vehicle class and several Child classes,
-            such as GasCar and DieselAirplane." />
+      <div class="image-container">
+        <img class="bridge-uml"
+              src="images/vehicles_with_different_fuel_types.PNG"
+              alt="UML Diagram of a Vehicle class and several Child classes." />
+      </div>
 
       <p>
         This hierarchy is exploding quickly, and only gets worse as additional
@@ -149,12 +146,13 @@
         class hierarchies by separating the vehicle (abstraction) from the
         engine (implementor):
       </p>
-      <img class="bridge-uml"
-            src="images/bridged_vehicles_with_engines.PNG"
-            alt="UML Diagram of the Vehicle class and a new Engine class. There
-            are far fewer classes in this diagram." />
+      <div class="image-container">
+        <img class="bridge-uml"
+              src="images/bridged_vehicles_with_engines.PNG"
+              alt="UML Diagram of the Vehicle class and a new Engine class." />
+      </div>
 
-      <h3>Bridge Pattern Example</h3>
+      <h2>Bridge Pattern Example</h2>
 
       <p>
         Below is some sample abstractions in the form of vehicles, based on the
@@ -194,7 +192,7 @@
         classes simply call methods on the given driver.
       </p>
 
-      <h3>Notes for other Patterns</h3>
+      <h2>Notes for other Patterns</h2>
 
       <p>
         The strategy pattern is very similar to the bridge pattern. Both aim to
@@ -225,7 +223,7 @@
       </p>
 
       <!-- APA citations for my research -->
-      <h3>Sources</h3>
+      <h2>Sources</h2>
       <div class="research-sources">
         <p>
           <i>Bridge</i>. (n.d.).
