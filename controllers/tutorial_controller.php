@@ -1,4 +1,9 @@
 <?php
+//Author:   Alex Ball
+//Date:     11/23/2016
+//Filename: tutorial_controller.php
+//This is the controller for the Bridge Pattern Explanation
+//website.
 class TutorialController {
   private $router;
 
